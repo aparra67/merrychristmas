@@ -1,7 +1,9 @@
 ## 🌟 Hermosa Navidad - Sitio Web Interactivo
 
 https://img.shields.io/badge/Navidad-2025-brightgreen
+
 https://img.shields.io/badge/Estado-Completado-success
+
 https://img.shields.io/badge/Versi%C3%B3n-1.0.0-orange
 
 Una experiencia web navideña interactiva y moderna que combina diseño visual atractivo con funcionalidades interactivas para celebrar la magia de la Navidad.
@@ -21,38 +23,53 @@ Características destacadas:
 ## 🚀 Tecnologías Utilizadas
 
 Frontend Principal
-Tecnología	Versión	Propósito
-https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white	5	Estructura semántica del sitio
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white	3	Estilos y animaciones personalizadas
-https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black	ES6+	Interactividad y lógica del sitio
-https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white	3.4+	Framework CSS para diseño utilitario
+Tecnología Versión Propósito
+
+https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white 5 Estructura semántica del sitio
+
+https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white 3 Estilos y animaciones personalizadas
+
+https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black ES6+ Interactividad y lógica del sitio
+
+https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white 3.4+ Framework CSS para diseño utilitario
+
 
 Bibliotecas y Recursos Externos
-Recurso	Propósito
-Font Awesome 6.4.0	Iconografía navideña
-Google Fonts	Tipografía personalizada
-CSS Animations	Animaciones personalizadas sin dependencias
 
-Tecnologías Específicas Implementadas
-CSS Grid & Flexbox: Diseño responsivo avanzado
+Recurso Propósito.
 
-CSS Custom Properties: Variables CSS para temática navideña
+Font Awesome 6.4.0 Iconografía navideña.
 
-CSS Animations & Keyframes: Animaciones personalizadas
+Google Fonts Tipografía personalizada.
 
-JavaScript ES6+: Módulos, clases, async/await
+CSS Animations Animaciones personalizadas sin dependencias.
 
-LocalStorage API: Persistencia de preferencias
 
-Web Share API: Compartir árbol navideño
+Tecnologías Específicas Implementadas.
 
-CSS 3D Transforms: Árbol de Navidad 3D
+CSS Grid & Flexbox: Diseño responsivo avanzado.
+
+CSS Custom Properties: Variables CSS para temática navideña.
+
+CSS Animations & Keyframes: Animaciones personalizadas.
+
+JavaScript ES6+: Módulos, clases, async/await.
+
+LocalStorage API: Persistencia de preferencias.
+
+Web Share API: Compartir árbol navideño.
+
+CSS 3D Transforms: Árbol de Navidad 3D.
+
 
 ## 🎨 Características del Proyecto
-Secciones Principales
-## 🏠 Inicio - Presentación visual con efectos navideños
 
-## 👥 Personajes - 8 personajes navideños interactivos:
+Secciones Principales.
+
+1. 🏠 Inicio - Presentación visual con efectos navideños.
+
+
+2. 👥 Personajes - 8 personajes navideños interactivos:
 
 Niño Jesús
 
@@ -70,7 +87,7 @@ Frosty el Muñeco de Nieve
 
 María y José
 
-## 🎄 Árbol 3D Interactivo - Sistema de decoración con:
+3. 🎄 Árbol 3D Interactivo - Sistema de decoración con:
 
 6 colores de esferas
 
@@ -82,47 +99,55 @@ Rotación 3D
 
 Contador de decoraciones
 
-## 📖 Tradiciones - Información sobre símbolos navideños
+4. 📖 Tradiciones - Información sobre símbolos navideños.
 
-Efectos Visuales
-❄️ Sistema de nieve dinámica con física simulada
+Efectos Visuales.
 
-## 💡 Luces navideñas parpadeantes
+- ❄️ Sistema de nieve dinámica con física simulada
 
-## ✨ Efectos de brillo y pulsación
+- 💡 Luces navideñas parpadeantes
 
-## 🎭 Animaciones de flotación personalizadas por personaje
+- ✨ Efectos de brillo y pulsación
 
-## 🌈 Gradientes navideños temáticos
+- 🎭 Animaciones de flotación personalizadas por personaje
+
+- 🌈 Gradientes navideños temáticos
 
 Interactividad
-## ✅ Modales informativos para cada personaje
 
-## 🖱️ Sistema de drag & drop (simulado) para decoraciones
+- ✅ Modales informativos para cada personaje
 
-## 🔊 Efectos de sonido simulados
+- 🖱️ Sistema de drag & drop (simulado) para decoraciones
 
-## 📱 Diseño completamente responsive
+- 🔊 Efectos de sonido simulados
 
-## 🔄 Animaciones activadas por usuario
+- 📱 Diseño completamente responsive
 
-## 📁 Estructura del Proyecto
+- 🔄 Animaciones activadas por usuario
+
+- 📁 Estructura del Proyecto
 
 hermosa-navidad/
-├── custom.js               # Lógica principal
-├── index.html              # Página principal
-├── README.md               # Este archivo
-├── styles.css              # Animaciones y estilos principales
+
+├── custom.js # Lógica principal
+
+├── index.html # Página principal
+
+├── README.md # Este archivo
+
+├── styles.css # Animaciones y estilos principales
+
 
 ## 👏 Reconocimientos
-Iconos por Font Awesome
 
-Fuentes por Google Fonts
+- Iconos por Font Awesome
 
-Inspiración navideña de tradiciones mundiales
+- Fuentes por Google Fonts
+
+- Inspiración navideña de tradiciones mundiales
 
 ## 📞 Contacto y Soporte
 
-Autor: [Angel Parra]
-Año: 2025
-Tema: Navidad Interactiva
+- Autor: [Angel Parra]
+- Año: 2025
+- Tema: Navidad Interactiva
