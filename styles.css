@@ -269,14 +269,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 23, 42, 0.95);
+  background-color: rgba(15, 23, 42, 0.98);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  padding: 20px 10px;
+  backdrop-filter: blur(10px);
 }
 
 .modal-overlay.active {
@@ -285,42 +289,84 @@ body {
 }
 
 .modal-content {
-  background: linear-gradient(
-    145deg,
-    rgba(30, 41, 59, 0.95),
-    rgba(15, 23, 42, 0.95)
-  );
-  border-radius: 24px;
-  padding: 2.5rem;
-  width: 90%;
-  max-width: 800px;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 95%;
+  max-width: 500px;
+  max-height: 85vh;
   position: relative;
-  transform: scale(0.9);
-  transition: transform 0.4s ease;
-  border: 2px solid rgba(251, 191, 36, 0.2);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border: 2px solid rgba(251, 191, 36, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Para evitar que el fondo se desplace en iOS */
+body.modal-open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .modal-overlay.active .modal-content {
-  transform: scale(1);
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 
+/* Botón de cierre mejorado para móviles */
 .modal-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: none;
+  top: 15px;
+  right: 15px;
+  background: rgba(239, 68, 68, 0.9);
   border: none;
-  color: var(--snow-white);
-  font-size: 1.8rem;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: color 0.3s;
-  z-index: 10;
+  transition: all 0.3s;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  -webkit-tap-highlight-color: transparent; /* Elimina el azul al tocar en móviles */
 }
 
-.modal-close:hover {
-  color: var(--gold);
+.modal-close:hover, .modal-close:active {
+  background: #ef4444;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Contenedor interno del modal con scroll */
+.modal-body {
+  max-height: calc(85vh - 100px);
+  overflow-y: auto;
+  padding-right: 5px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Personalización de scrollbar para móviles */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(251, 191, 36, 0.5);
+  border-radius: 10px;
 }
 
 /* Efectos de luces navideñas */
@@ -659,9 +705,13 @@ body {
 /* Responsive adicional */
 @media (max-width: 768px) {
   .modal-content {
+    max-width: 450px;
+    padding: 1.8rem;
+  }
+  /*.modal-content {
     padding: 1.5rem;
     width: 95%;
-  }
+  }*/
 
   .character-card:hover {
     transform: translateY(-8px) scale(1.03);
@@ -707,6 +757,25 @@ body {
 }
 
 @media (max-width: 480px) {
+  .modal-content {
+    padding: 1.2rem;
+    width: 92%;
+    max-height: 80vh;
+    border-radius: 16px;
+}
+
+.modal-close {
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+}
+
+.modal-body {
+    max-height: calc(80vh - 90px);
+}
+
   .tree-container {
     width: 220px;
     height: 380px;
