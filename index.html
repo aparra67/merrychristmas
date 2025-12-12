@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermosa Navidad 2025</title>
+    <meta name="description" content="Una experiencia navideña moderna con personajes interactivos y animaciones">
+    <meta name="keywords" content="Navidad, personajes navideños, Niño Jesús, árbol de navidad 3D, animaciones, Reyes Magos, Ángel Gabriel">
+    <meta name="author" content="Angel Parra">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;800&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-dark': '#0f172a',
+                        'emerald': '#10b981',
+                        'ruby': '#ef4444',
+                        'gold': '#fbbf24',
+                        'frost-blue': '#38bdf8',
+                        'snow-white': '#f8fafc',
+                        'angel-gold': '#fde047',
+                        'jesus-blue': '#3b82f6',
+                        'tree-green': '#14532d',
+                        'tree-dark-green': '#052e16',
+                        'christmas-red': '#dc2626',
+                        'christmas-green': '#16a34a',
+                        'christmas-gold': '#eab308',
+                        'christmas-silver': '#cbd5e1',
+                        'christmas-purple': '#8b5cf6',
+                        'christmas-pink': '#ec4899',
+                        'christmas-orange': '#f97316',
+                        'christmas-brown': '#92400e',
+                        'christmas-cyan': '#06b6d4',
+                        'christmas-blue': '#3b82f6',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                        'dancing': ['Dancing Script', 'cursive'],
+                    },
+                    animation: {
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'spin-slow': 'spin 20s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="relative">
+    <!-- Efecto de nieve -->
+    <div class="snow-container" id="snow-container"></div>
+    
+    <!-- Luces navideñas -->
+    <div class="lights-container" id="lights-container"></div>
+    
+    <!-- Header Moderno -->
+    <header class="relative z-20 py-6 px-4 md:px-8 lg:px-16 border-b border-gray-800 bg-navy-dark/90 backdrop-blur-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-christmas-red via-christmas-gold to-christmas-green flex items-center justify-center animate-pulse-glow">
+                    <i class="fas fa-star text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="title-font text-3xl md:text-4xl font-bold bg-gradient-to-r from-christmas-gold via-christmas-red to-christmas-green bg-clip-text text-transparent">
+                        Hermosa Navidad
+                    </h1>
+                    <p class="text-sm text-gray-400">Celebrando la magia y alegría de la temporada</p>
+                </div>
+            </div>
+            
+            <nav class="flex space-x-6">
+                <a href="#inicio" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
+                    Inicio
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#personajes" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
+                    Personajes
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#arbol" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
+                    Árbol 3D
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="#acerca" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
+                    Tradiciones
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
+                </a>
+            </nav>
+        </div>
+        <div class="christmas-banner mt-4"></div>
+    </header>
+    
+    <!-- Sección Hero -->
+    <section id="inicio" class="relative z-10 py-16 md:py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 animate-slide-in">
+                    <h2 class="title-font text-4xl md:text-6xl font-bold mb-6">
+                        <span class="text-snow-white">¡Feliz</span>
+                        <span class="block text-transparent bg-gradient-to-r from-christmas-red via-christmas-gold to-christmas-green bg-clip-text script-font">Hermosa Navidad!</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8 max-w-2xl">
+                        Esta Navidad, celebremos juntos la magia, la alegría y la unidad familiar. 
+                        Disfruta de nuestro árbol navideño 3D interactivo y descubre todos los personajes 
+                        que hacen de esta temporada una época verdaderamente especial.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#personajes" class="px-8 py-3 bg-gradient-to-r from-christmas-red to-christmas-gold text-white font-semibold rounded-full hover:shadow-lg hover:shadow-christmas-red/30 transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fas fa-users mr-2"></i> Conocer Personajes
+                        </a>
+                        <a href="#arbol" class="px-8 py-3 border-2 border-christmas-green text-christmas-green font-semibold rounded-full hover:bg-christmas-green/10 transition-all duration-300">
+                            <i class="fas fa-tree mr-2"></i> Decorar Árbol 3D
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-christmas-red/20 to-christmas-gold/20 flex items-center justify-center animate-pulse">
+                            <div class="w-56 h-56 md:w-72 md:h-72 rounded-full bg-gradient-to-r from-christmas-green/20 to-christmas-purple/20 flex items-center justify-center">
+                                <i class="fas fa-gifts text-6xl md:text-8xl text-christmas-gold animate-float"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Elementos decorativos flotantes -->
+                        <div class="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-r from-christmas-green to-christmas-blue opacity-20 animate-float"></div>
+                        <div class="absolute -bottom-4 -right-4 w-20 h-20 rounded-full bg-gradient-to-r from-christmas-red to-christmas-gold opacity-20 animate-float" style="animation-delay: 1s;"></div>
+                        <div class="absolute top-1/2 -right-8 w-12 h-12 rounded-full bg-gradient-to-r from-christmas-gold to-christmas-green opacity-20 animate-float" style="animation-delay: 2s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Personajes -->
+    <section id="personajes" class="relative z-10 py-16 md:py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-navy-dark via-purple-900/20 to-gray-900">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-transparent bg-gradient-to-r from-christmas-gold via-christmas-red to-christmas-cyan bg-clip-text">Personajes Navideños</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Conoce a todos los personajes que hacen de la Navidad una época mágica y especial.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Niño Jesús -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-blue/30 shadow-xl" data-character="jesus">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-blue to-angel-gold mb-6 flex items-center justify-center jesus-animation">
+                            <i class="fas fa-baby text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Niño Jesús</h3>
+                        <p class="text-gray-400 text-center mb-6">El Salvador, el regalo de Dios a la humanidad, nacido en Belén.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-blue to-angel-gold text-white font-medium rounded-full hover:shadow-lg hover:shadow-christmas-blue/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Santa Claus -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-red/30 shadow-xl" data-character="santa">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-red to-christmas-red/70 mb-6 flex items-center justify-center santa-animation">
+                            <i class="fas fa-sleigh text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Santa Claus</h3>
+                        <p class="text-gray-400 text-center mb-6">Símbolo de generosidad que reparte alegría en Navidad.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-red to-christmas-red/80 text-white font-medium rounded-full hover:shadow-lg hover:shadow-christmas-red/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Ángel Gabriel -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-silver/30 shadow-xl" data-character="angel">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-silver to-angel-gold mb-6 flex items-center justify-center angel-animation">
+                            <i class="fas fa-dove text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Ángel Gabriel</h3>
+                        <p class="text-gray-400 text-center mb-6">El mensajero celestial que anunció el nacimiento de Jesús.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-silver to-angel-gold text-gray-900 font-medium rounded-full hover:shadow-lg hover:shadow-yellow-400/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Reyes Magos -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-purple/30 shadow-xl" data-character="magi">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-purple to-christmas-gold mb-6 flex items-center justify-center magi-animation">
+                            <i class="fas fa-crown text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Reyes Magos</h3>
+                        <p class="text-gray-400 text-center mb-6">Melchor, Gaspar y Baltasar, quienes visitaron al Niño Jesús.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-purple to-christmas-gold text-white font-medium rounded-full hover:shadow-lg hover:shadow-purple-600/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segunda fila de personajes -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Rodolfo el Reno -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-brown/30 shadow-xl" data-character="reindeer">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-brown to-christmas-red mb-6 flex items-center justify-center reindeer-animation">
+                            <i class="fas fa-horse-head text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Rodolfo</h3>
+                        <p class="text-gray-400 text-center mb-6">El reno con nariz brillante que guía el trineo en la noche.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-brown to-christmas-red text-white font-medium rounded-full hover:shadow-lg hover:shadow-christmas-brown/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Duende Navideño -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-green/30 shadow-xl" data-character="elf">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-green to-christmas-cyan mb-6 flex items-center justify-center elf-animation">
+                            <i class="fas fa-hat-wizard text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Duende Mágico</h3>
+                        <p class="text-gray-400 text-center mb-6">Ayudante de Santa que fabrica juguetes con magia navideña.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-green to-christmas-cyan text-white font-medium rounded-full hover:shadow-lg hover:shadow-christmas-green/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Muñeco de Nieve -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-silver/30 shadow-xl" data-character="snowman">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-snow-white to-gray-300 mb-6 flex items-center justify-center snowman-animation">
+                            <i class="fas fa-snowman text-5xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Frosty</h3>
+                        <p class="text-gray-400 text-center mb-6">El alegre muñeco de nieve que cobra vida con un sombrero mágico.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-snow-white to-gray-300 text-gray-900 font-medium rounded-full hover:shadow-lg hover:shadow-gray-400/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- María y José -->
+                <div class="character-card rounded-2xl p-6 border border-christmas-cyan/30 shadow-xl" data-character="mary">
+                    <div class="flex flex-col items-center">
+                        <div class="w-32 h-32 rounded-full bg-gradient-to-r from-christmas-cyan to-blue-300 mb-6 flex items-center justify-center animate-float-slow">
+                            <i class="fas fa-hands-praying text-5xl text-white glow-effect"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">María y José</h3>
+                        <p class="text-gray-400 text-center mb-6">Los padres terrenales del Niño Jesús en el pesebre de Belén.</p>
+                        <button class="px-6 py-2 bg-gradient-to-r from-christmas-cyan to-blue-400 text-white font-medium rounded-full hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección del Árbol Navideño 3D -->
+    <section id="arbol" class="relative z-10 py-16 md:py-20 px-4 md:px-8 lg:px-16 tree-section">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-transparent bg-gradient-to-r from-christmas-green via-christmas-gold to-christmas-red bg-clip-text">Árbol de Navidad 3D</span>
+                </h2>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
+                    Interactúa con nuestro árbol navideño en 3D. Decóralo con esferas coloridas, añade luces parpadeantes 
+                    y descubre la magia de esta hermosa tradición.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Árbol 3D interactivo -->
+                <div class="lg:w-1/2 flex flex-col items-center">
+                    <div class="tree-container animate-tree-glow mb-10">
+                        <div class="tree-3d" id="tree3d">
+                            <!-- Capas del árbol -->
+                            <div class="tree-layer tree-layer-1"></div>
+                            <div class="tree-layer tree-layer-2"></div>
+                            <div class="tree-layer tree-layer-3"></div>
+                            <div class="tree-layer tree-layer-4"></div>
+                            <div class="tree-trunk"></div>
+                            
+                            <!-- Estrella -->
+                            <div class="tree-star animate-star-twinkle">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            
+                            <!-- Luces y adornos se añadirán con JavaScript -->
+                            
+                            <!-- Regalos debajo del árbol -->
+                            <div class="tree-gifts">
+                                <div class="gift-box" style="--gift-delay: 0s;">
+                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
+                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
+                                    <div class="gift-bow"></div>
+                                </div>
+                                <div class="gift-box" style="--gift-delay: 1s;">
+                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
+                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
+                                    <div class="gift-bow"></div>
+                                </div>
+                                <div class="gift-box" style="--gift-delay: 2s;">
+                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
+                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
+                                    <div class="gift-bow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Controles del árbol -->
+                    <div class="tree-controls w-full max-w-md">
+                        <h3 class="text-2xl font-bold text-center text-white mb-6">Decora tu Árbol</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Añadir Esferas</h4>
+                            <div class="flex justify-center flex-wrap gap-4 mb-6">
+                                <button onclick="addOrnament('christmas-red')" class="ornament-btn bg-christmas-red" title="Esfera Roja">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                                <button onclick="addOrnament('christmas-green')" class="ornament-btn bg-christmas-green" title="Esfera Verde">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                                <button onclick="addOrnament('christmas-gold')" class="ornament-btn bg-christmas-gold" title="Esfera Dorada">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                                <button onclick="addOrnament('christmas-blue')" class="ornament-btn bg-christmas-blue" title="Esfera Azul">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                                <button onclick="addOrnament('christmas-purple')" class="ornament-btn bg-christmas-purple" title="Esfera Púrpura">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                                <button onclick="addOrnament('christmas-cyan')" class="ornament-btn bg-christmas-cyan" title="Esfera Cian">
+                                    <i class="fas fa-circle text-white"></i>
+                                </button>
+                            </div>
+                            
+                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Añadir Luces</h4>
+                            <div class="flex justify-center flex-wrap gap-4 mb-6">
+                                <button onclick="addLight()" class="ornament-btn bg-gradient-to-r from-christmas-gold to-christmas-orange" title="Añadir Luz">
+                                    <i class="fas fa-lightbulb text-white"></i>
+                                </button>
+                                <button onclick="toggleLights()" class="ornament-btn bg-gradient-to-r from-gray-700 to-gray-900" id="lightsToggle" title="Encender/Apagar Luces">
+                                    <i class="fas fa-power-off text-white"></i>
+                                </button>
+                            </div>
+                            
+                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Opciones</h4>
+                            <div class="flex justify-center flex-wrap gap-4">
+                                <button onclick="clearOrnaments()" class="ornament-btn bg-gradient-to-r from-gray-700 to-gray-900" title="Limpiar Árbol">
+                                    <i class="fas fa-trash text-white"></i>
+                                </button>
+                                <button onclick="rotateTree()" class="ornament-btn bg-gradient-to-r from-christmas-cyan to-christmas-blue" title="Rotar Árbol">
+                                    <i class="fas fa-sync-alt text-white"></i>
+                                </button>
+                                <button onclick="randomDecorations()" class="ornament-btn bg-gradient-to-r from-christmas-pink to-christmas-purple" title="Decoración Aleatoria">
+                                    <i class="fas fa-random text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="text-gray-400 text-sm">
+                                <span id="ornamentCount">0</span> esferas • 
+                                <span id="lightCount">0</span> luces • 
+                                <span id="totalDecorations">0</span> decoraciones en total
+                            </p>
+                            <p class="text-gray-500 text-xs mt-2">Haz clic en las esferas para eliminarlas individualmente</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Información del árbol -->
+                <div class="lg:w-1/2">
+                    <div class="bg-gradient-to-br from-gray-900/80 to-navy-dark/80 rounded-2xl p-8 border border-gray-800 backdrop-blur-sm">
+                        <h3 class="text-3xl font-bold text-white mb-6">Significado del Árbol de Navidad</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-christmas-green/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-tree text-christmas-green text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Vida Eterna</h4>
+                                    <p class="text-gray-300">El árbol perenne representa la vida eterna y la esperanza que renace cada Navidad con el nacimiento de Jesús.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-christmas-gold/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-star text-christmas-gold text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">La Estrella de Belén</h4>
+                                    <p class="text-gray-300">La estrella en la punta del árbol simboliza la estrella que guió a los Reyes Magos hasta el pesebre de Belén.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-christmas-red/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-gift text-christmas-red text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Regalos y Bendiciones</h4>
+                                    <p class="text-gray-300">Los adornos y regalos representan las bendiciones y el espíritu de dar que caracteriza la Navidad.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-christmas-blue/20 flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-lightbulb text-christmas-blue text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Luces de Esperanza</h4>
+                                    <p class="text-gray-300">Las luces del árbol simbolizan la luz de la esperanza, la fe y el amor que iluminan nuestras vidas en Navidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-4 bg-gradient-to-r from-christmas-red/10 to-christmas-green/10 rounded-xl border border-christmas-gold/30">
+                            <p class="text-center text-gray-300 italic">
+                                "La Navidad no es un momento ni una estación, sino un estado de la mente. Valorar la paz y la generosidad, y tener merced es comprender el verdadero significado de la Navidad."
+                                <span class="block mt-2 text-christmas-gold">- Calvin Coolidge</span>
+                            </p>
+                        </div>
+                        
+                        <div class="mt-6 text-center">
+                            <button onclick="shareTree()" class="px-6 py-2 bg-gradient-to-r from-christmas-purple to-christmas-pink text-white font-medium rounded-full hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+                                <i class="fas fa-share-alt mr-2"></i> Compartir mi Árbol
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Tradiciones -->
+    <section id="acerca" class="relative z-10 py-16 md:py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-900 to-navy-dark">
+        <div class="container mx-auto">
+            <div class="bg-gradient-to-r from-christmas-red/10 via-christmas-green/10 to-christmas-gold/10 rounded-3xl p-8 md:p-12 border border-christmas-gold/20 backdrop-blur-sm">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+                        <h2 class="title-font text-4xl md:text-5xl font-bold mb-6">
+                            <span class="text-snow-white">Tradiciones de una</span>
+                            <span class="block text-transparent bg-gradient-to-r from-christmas-red to-christmas-gold bg-clip-text">Hermosa Navidad</span>
+                        </h2>
+                        <p class="text-gray-300 mb-6">
+                            La Navidad es una época de tradiciones familiares, momentos especiales y recuerdos que perduran. 
+                            Desde decorar el árbol hasta cantar villancicos, cada tradición añade magia a esta hermosa temporada.
+                        </p>
+                        <p class="text-gray-300 mb-8">
+                            Ya sea reuniéndose alrededor de la mesa, intercambiando regalos con amor, o compartiendo historias 
+                            junto al fuego, estas tradiciones crean lazos que unen a familias y amigos.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-christmas-red to-christmas-gold flex items-center justify-center mr-3">
+                                    <i class="fas fa-gifts text-white"></i>
+                                </div>
+                                <span class="font-medium">Intercambio de Regalos</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-christmas-green to-christmas-cyan flex items-center justify-center mr-3">
+                                    <i class="fas fa-utensils text-white"></i>
+                                </div>
+                                <span class="font-medium">Cenas Familiares</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/2">
+                        <div class="bg-gradient-to-br from-gray-900 to-navy-dark rounded-2xl p-6 border border-christmas-purple/30">
+                            <h3 class="text-2xl font-bold text-white mb-6 text-center">Símbolos Navideños</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-900/50 rounded-xl p-4 border border-christmas-red/30 flex flex-col items-center text-center">
+                                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-christmas-red to-christmas-orange flex items-center justify-center mb-3">
+                                        <i class="fas fa-candy-cane text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Bastón de Caramelo</h4>
+                                        <p class="text-sm text-gray-400 mt-1">Forma de "J" por Jesús, blanco por pureza</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-900/50 rounded-xl p-4 border border-christmas-green/30 flex flex-col items-center text-center">
+                                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-christmas-green to-emerald-400 flex items-center justify-center mb-3">
+                                        <i class="fas fa-wreath text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Corona Navideña</h4>
+                                        <p class="text-sm text-gray-400 mt-1">Círculo sin fin que simboliza la vida eterna</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-900/50 rounded-xl p-4 border border-christmas-gold/30 flex flex-col items-center text-center">
+                                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-christmas-gold to-yellow-300 flex items-center justify-center mb-3">
+                                        <i class="fas fa-bell text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Campanas</h4>
+                                        <p class="text-sm text-gray-400 mt-1">Anuncian la llegada de la Navidad y la alegría</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-900/50 rounded-xl p-4 border border-christmas-blue/30 flex flex-col items-center text-center">
+                                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-christmas-blue to-blue-400 flex items-center justify-center mb-3">
+                                        <i class="fas fa-snowflake text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Copo de Nieve</h4>
+                                        <p class="text-sm text-gray-400 mt-1">Único y especial como cada persona</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para personajes -->
+    <div class="modal-overlay" id="characterModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div id="modalContent" class="modal-body">
+                <!-- Contenido dinámico del modal -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="relative z-10 py-10 px-4 md:px-8 lg:px-16 border-t border-gray-800 bg-gradient-to-b from-gray-900 to-navy-dark">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-christmas-red to-christmas-gold flex items-center justify-center">
+                            <i class="fas fa-tree text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="title-font text-2xl font-bold text-white">Hermosa Navidad</h3>
+                            <p class="text-gray-400 text-sm">Celebrando la magia de la temporada</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://github.com/aparra67" class="w-10 h-10 rounded-full bg-christmas-red/20 flex items-center justify-center text-gray-400 hover:text-christmas-gold hover:bg-christmas-red/40 transition-all duration-300" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/angelparra5748/" class="w-10 h-10 rounded-full bg-christmas-green/20 flex items-center justify-center text-gray-400 hover:text-christmas-gold hover:bg-christmas-green/40 transition-all duration-300" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/angel-parra-acosta-b03383248/" class="w-10 h-10 rounded-full bg-christmas-blue/20 flex items-center justify-center text-gray-400 hover:text-christmas-gold hover:bg-christmas-blue/40 transition-all duration-300" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-500">
+                    &copy; <span id="currentYear"></span> Hermosa Navidad. Todos los derechos reservados.
+                    <span class="block mt-2 text-sm">Diseñado por Angel Parra con <i class="fas fa-heart text-christmas-red mx-1"></i> para celebrar la alegría de la Navidad</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="custom.js"></script>
+</body>
+</html>
