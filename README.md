@@ -8,7 +8,7 @@ https://img.shields.io/badge/Versi%C3%B3n-1.0.0-orange
 
 Una experiencia web navideña interactiva y moderna que combina diseño visual atractivo con funcionalidades interactivas para celebrar la magia de la Navidad.
 
-## Características destacadas:
+# Características destacadas:
 
 - 🌟 Árbol de Navidad 3D interactivo
 
@@ -20,9 +20,9 @@ Una experiencia web navideña interactiva y moderna que combina diseño visual a
 
 - 🎁 Sistema de decoración interactiva
 
-## 🚀 Tecnologías Utilizadas
+# 🚀 Tecnologías Utilizadas
 
-# Frontend Principal
+## Frontend Principal
 Tecnología                                                                                          Versión     Propósito
 
 https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white                5           Estructura semántica del sitio
@@ -34,7 +34,7 @@ https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascri
 https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white  3.4+        Framework CSS para diseño utilitario
 
 
-# Bibliotecas y Recursos Externos
+## Bibliotecas y Recursos Externos
 
 Recurso                     Propósito.
 
@@ -45,7 +45,7 @@ Google Fonts                Tipografía personalizada.
 CSS Animations              Animaciones personalizadas sin dependencias.
 
 
-# Tecnologías Específicas Implementadas.
+## Tecnologías Específicas Implementadas.
 
 - CSS Grid & Flexbox: Diseño responsivo avanzado.
 
@@ -62,7 +62,7 @@ CSS Animations              Animaciones personalizadas sin dependencias.
 - CSS 3D Transforms: Árbol de Navidad 3D.
 
 
-## 🎨 Características del Proyecto
+# 🎨 Características del Proyecto
 
 Secciones Principales.
 
@@ -125,7 +125,7 @@ Secciones Principales.
 
 - - 🔄 Animaciones activadas por usuario
 
-## 📁 Estructura del Proyecto
+# 📁 Estructura del Proyecto
 
 hermosa-navidad/
 
@@ -138,7 +138,7 @@ hermosa-navidad/
 ├── styles.css # Animaciones y estilos principales
 
 
-## 👏 Reconocimientos
+# 👏 Reconocimientos
 
 - Iconos por Font Awesome
 
@@ -146,7 +146,7 @@ hermosa-navidad/
 
 - Inspiración navideña de tradiciones mundiales
 
-## 📞 Contacto y Soporte
+# 📞 Contacto y Soporte
 
 - Autor: [Angel Parra]
 - Año: 2025
