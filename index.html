@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hermosa Navidad 2025</title>
     <meta name="description" content="Una experiencia navideña moderna con personajes interactivos y animaciones">
-    <meta name="keywords" content="Navidad, personajes navideños, Niño Jesús, árbol de navidad 3D, animaciones, Reyes Magos, Ángel Gabriel">
+    <meta name="keywords" content="Navidad, personajes navideños, Niño Jesús, árbol de navidad SVG, animaciones, Reyes Magos, Ángel Gabriel">
     <meta name="author" content="Angel Parra">
     
     <!-- Tailwind CSS CDN -->
@@ -54,6 +54,19 @@
                         'float-slow': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 3s ease-in-out infinite',
                         'spin-slow': 'spin 20s linear infinite',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'bounce-gentle': 'bounceGentle 2s ease-in-out infinite',
+                        'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+                        'shake-gentle': 'shakeGentle 0.5s ease-in-out',
+                        'fly-around': 'flyAround 4s linear infinite',
+                        'santa-move': 'santaMove 3s ease-in-out infinite',
+                        'reindeer-nose': 'reindeerNose 1.5s ease-in-out infinite',
+                        'angel-halo': 'angelHalo 3s ease-in-out infinite',
+                        'magi-glow': 'magiGlow 2s ease-in-out infinite',
+                        'elf-jump': 'elfJump 1s ease-in-out infinite',
+                        'snowman-melt': 'snowmanMelt 4s ease-in-out infinite',
+                        'mary-joseph': 'maryJoseph 3s ease-in-out infinite',
+                        'jesus-cradle': 'jesusCradle 3s ease-in-out infinite',
                     }
                 }
             }
@@ -92,7 +105,7 @@
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
                 </a>
                 <a href="#arbol" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
-                    Árbol 3D
+                    Árbol SVG
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-christmas-gold group-hover:w-full transition-all duration-300"></span>
                 </a>
                 <a href="#acerca" class="text-snow-white hover:text-christmas-gold transition-colors duration-300 font-medium relative group">
@@ -115,7 +128,7 @@
                     </h2>
                     <p class="text-lg text-gray-300 mb-8 max-w-2xl">
                         Esta Navidad, celebremos juntos la magia, la alegría y la unidad familiar. 
-                        Disfruta de nuestro árbol navideño 3D interactivo y descubre todos los personajes 
+                        Disfruta de nuestro árbol navideño SVG interactivo y descubre todos los personajes 
                         que hacen de esta temporada una época verdaderamente especial.
                     </p>
                     <div class="flex flex-wrap gap-4">
@@ -123,7 +136,7 @@
                             <i class="fas fa-users mr-2"></i> Conocer Personajes
                         </a>
                         <a href="#arbol" class="px-8 py-3 border-2 border-christmas-green text-christmas-green font-semibold rounded-full hover:bg-christmas-green/10 transition-all duration-300">
-                            <i class="fas fa-tree mr-2"></i> Decorar Árbol 3D
+                            <i class="fas fa-tree mr-2"></i> Decorar Árbol SVG
                         </a>
                     </div>
                 </div>
@@ -277,56 +290,38 @@
         </div>
     </section>
     
-    <!-- Sección del Árbol Navideño 3D -->
+    <!-- Sección del Árbol Navideño SVG -->
     <section id="arbol" class="relative z-10 py-16 md:py-20 px-4 md:px-8 lg:px-16 tree-section">
         <div class="container mx-auto">
             <div class="text-center mb-12">
                 <h2 class="title-font text-4xl md:text-5xl font-bold mb-4">
-                    <span class="text-transparent bg-gradient-to-r from-christmas-green via-christmas-gold to-christmas-red bg-clip-text">Árbol de Navidad 3D</span>
+                    <span class="text-transparent bg-gradient-to-r from-christmas-green via-christmas-gold to-christmas-red bg-clip-text">Árbol de Navidad SVG</span>
                 </h2>
                 <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-                    Interactúa con nuestro árbol navideño en 3D. Decóralo con esferas coloridas, añade luces parpadeantes 
-                    y descubre la magia de esta hermosa tradición.
+                    Interactúa con nuestro árbol navideño SVG. Decóralo con esferas coloridas, añade luces parpadeantes 
+                    y descubre la magia de esta hermosa tradición. Haz clic en los adornos para interactuar con ellos.
                 </p>
             </div>
             
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
-                <!-- Árbol 3D interactivo -->
+                <!-- Árbol SVG interactivo -->
                 <div class="lg:w-1/2 flex flex-col items-center">
                     <div class="tree-container animate-tree-glow mb-10">
-                        <div class="tree-3d" id="tree3d">
-                            <!-- Capas del árbol -->
-                            <div class="tree-layer tree-layer-1"></div>
-                            <div class="tree-layer tree-layer-2"></div>
-                            <div class="tree-layer tree-layer-3"></div>
-                            <div class="tree-layer tree-layer-4"></div>
-                            <div class="tree-trunk"></div>
-                            
-                            <!-- Estrella -->
-                            <div class="tree-star animate-star-twinkle">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            
-                            <!-- Luces y adornos se añadirán con JavaScript -->
-                            
-                            <!-- Regalos debajo del árbol -->
-                            <div class="tree-gifts">
-                                <div class="gift-box" style="--gift-delay: 0s;">
-                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
-                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
-                                    <div class="gift-bow"></div>
-                                </div>
-                                <div class="gift-box" style="--gift-delay: 1s;">
-                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
-                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
-                                    <div class="gift-bow"></div>
-                                </div>
-                                <div class="gift-box" style="--gift-delay: 2s;">
-                                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
-                                    <div class="gift-ribbon gift-ribbon-vertical"></div>
-                                    <div class="gift-bow"></div>
-                                </div>
-                            </div>
+                        <div class="relative flex justify-center items-center" id="svg-container">
+                            <!-- SVG se cargará aquí dinámicamente -->
+                        </div>
+                        
+                        <!-- Controles de interactividad -->
+                        <div class="mt-8 flex justify-center flex-wrap gap-4">
+                            <button onclick="toggleLights()" class="px-4 py-2 bg-gradient-to-r from-christmas-gold to-christmas-orange text-white rounded-full hover:shadow-lg transition-all duration-300 flex items-center">
+                                <i class="fas fa-lightbulb mr-2"></i> Luces
+                            </button>
+                            <button onclick="animateStar()" class="px-4 py-2 bg-gradient-to-r from-christmas-blue to-christmas-cyan text-white rounded-full hover:shadow-lg transition-all duration-300 flex items-center">
+                                <i class="fas fa-star mr-2"></i> Estrella
+                            </button>
+                            <button onclick="randomDecorations()" class="px-4 py-2 bg-gradient-to-r from-christmas-purple to-christmas-pink text-white rounded-full hover:shadow-lg transition-all duration-300 flex items-center">
+                                <i class="fas fa-random mr-2"></i> Aleatorio
+                            </button>
                         </div>
                     </div>
                     
@@ -335,59 +330,49 @@
                         <h3 class="text-2xl font-bold text-center text-white mb-6">Decora tu Árbol</h3>
                         
                         <div class="mb-6">
-                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Añadir Esferas</h4>
+                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Cambiar Colores de Adornos</h4>
                             <div class="flex justify-center flex-wrap gap-4 mb-6">
-                                <button onclick="addOrnament('christmas-red')" class="ornament-btn bg-christmas-red" title="Esfera Roja">
+                                <button onclick="changeOrnamentColor('crimson')" class="ornament-btn bg-christmas-red" title="Rojo">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
-                                <button onclick="addOrnament('christmas-green')" class="ornament-btn bg-christmas-green" title="Esfera Verde">
+                                <button onclick="changeOrnamentColor('deepskyblue')" class="ornament-btn bg-christmas-blue" title="Azul">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
-                                <button onclick="addOrnament('christmas-gold')" class="ornament-btn bg-christmas-gold" title="Esfera Dorada">
+                                <button onclick="changeOrnamentColor('gold')" class="ornament-btn bg-christmas-gold" title="Dorado">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
-                                <button onclick="addOrnament('christmas-blue')" class="ornament-btn bg-christmas-blue" title="Esfera Azul">
+                                <button onclick="changeOrnamentColor('darkviolet')" class="ornament-btn bg-christmas-purple" title="Púrpura">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
-                                <button onclick="addOrnament('christmas-purple')" class="ornament-btn bg-christmas-purple" title="Esfera Púrpura">
+                                <button onclick="changeOrnamentColor('hotpink')" class="ornament-btn bg-christmas-pink" title="Rosa">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
-                                <button onclick="addOrnament('christmas-cyan')" class="ornament-btn bg-christmas-cyan" title="Esfera Cian">
+                                <button onclick="changeOrnamentColor('limegreen')" class="ornament-btn bg-christmas-green" title="Verde">
                                     <i class="fas fa-circle text-white"></i>
                                 </button>
                             </div>
                             
-                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Añadir Luces</h4>
+                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Efectos Especiales</h4>
                             <div class="flex justify-center flex-wrap gap-4 mb-6">
-                                <button onclick="addLight()" class="ornament-btn bg-gradient-to-r from-christmas-gold to-christmas-orange" title="Añadir Luz">
-                                    <i class="fas fa-lightbulb text-white"></i>
+                                <button onclick="toggleSnow()" class="ornament-btn bg-gradient-to-r from-christmas-silver to-gray-400" title="Nieve">
+                                    <i class="fas fa-snowflake text-white"></i>
                                 </button>
-                                <button onclick="toggleLights()" class="ornament-btn bg-gradient-to-r from-gray-700 to-gray-900" id="lightsToggle" title="Encender/Apagar Luces">
-                                    <i class="fas fa-power-off text-white"></i>
+                                <button onclick="sparkleEffect()" class="ornament-btn bg-gradient-to-r from-christmas-gold to-yellow-300" title="Brillo">
+                                    <i class="fas fa-sparkles text-white"></i>
                                 </button>
-                            </div>
-                            
-                            <h4 class="text-lg font-semibold text-christmas-green mb-4">Opciones</h4>
-                            <div class="flex justify-center flex-wrap gap-4">
-                                <button onclick="clearOrnaments()" class="ornament-btn bg-gradient-to-r from-gray-700 to-gray-900" title="Limpiar Árbol">
-                                    <i class="fas fa-trash text-white"></i>
-                                </button>
-                                <button onclick="rotateTree()" class="ornament-btn bg-gradient-to-r from-christmas-cyan to-christmas-blue" title="Rotar Árbol">
-                                    <i class="fas fa-sync-alt text-white"></i>
-                                </button>
-                                <button onclick="randomDecorations()" class="ornament-btn bg-gradient-to-r from-christmas-pink to-christmas-purple" title="Decoración Aleatoria">
-                                    <i class="fas fa-random text-white"></i>
+                                <button onclick="resetTree()" class="ornament-btn bg-gradient-to-r from-gray-700 to-gray-900" title="Reiniciar">
+                                    <i class="fas fa-redo text-white"></i>
                                 </button>
                             </div>
                         </div>
                         
                         <div class="text-center">
                             <p class="text-gray-400 text-sm">
-                                <span id="ornamentCount">0</span> esferas • 
-                                <span id="lightCount">0</span> luces • 
-                                <span id="totalDecorations">0</span> decoraciones en total
+                                <span id="ornamentCount">5</span> adornos • 
+                                <span id="lightCount">5</span> luces • 
+                                Haciendo clic interactivo
                             </p>
-                            <p class="text-gray-500 text-xs mt-2">Haz clic en las esferas para eliminarlas individualmente</p>
+                            <p class="text-gray-500 text-xs mt-2">Haz clic en cualquier parte del árbol para descubrir sorpresas</p>
                         </div>
                     </div>
                 </div>
@@ -539,7 +524,7 @@
         </div>
     </section>
     
-    <!-- Modal para personajes -->
+    <!-- Modal para personajes - MEJORADO -->
     <div class="modal-overlay" id="characterModal">
         <div class="modal-content">
             <button class="modal-close" id="modalClose">
