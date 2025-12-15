@@ -41,7 +41,7 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
-/* Animaciones personalizadas */
+/* ===== ANIMACIONES PERSONALIZADAS ===== */
 @keyframes float {
   0%,
   100% {
@@ -208,6 +208,220 @@ body {
   }
 }
 
+/* ===== NUEVAS ANIMACIONES PARA PERSONAJES ===== */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px currentColor);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px currentColor);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shakeGentle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes flyAround {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(20px, -15px) rotate(10deg);
+  }
+  50% {
+    transform: translate(0, -25px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-20px, -15px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes santaMove {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(15px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-15px) rotate(-5deg);
+  }
+}
+
+@keyframes reindeerNose {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #ff0000);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #ff0000);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes angelHalo {
+  0%, 100% {
+    transform: rotate(0deg);
+    filter: drop-shadow(0 0 10px gold);
+  }
+  25% {
+    transform: rotate(90deg);
+    filter: drop-shadow(0 0 15px gold);
+  }
+  50% {
+    transform: rotate(180deg);
+    filter: drop-shadow(0 0 20px gold);
+  }
+  75% {
+    transform: rotate(270deg);
+    filter: drop-shadow(0 0 15px gold);
+  }
+}
+
+@keyframes magiGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px #8b5cf6);
+    transform: translateY(0);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #fbbf24);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes elfJump {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+  60% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
+
+@keyframes snowmanMelt {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+  }
+}
+
+@keyframes maryJoseph {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  33% {
+    transform: translateY(-5px) scale(1.05);
+  }
+  66% {
+    transform: translateY(-8px) scale(1.03);
+  }
+}
+
+@keyframes jesusCradle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes svg-snow-fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+}
+
+@keyframes gift-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes star-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* CLASES DE ANIMACIÓN */
 .animate-float {
   animation: float 5s ease-in-out infinite;
 }
@@ -244,7 +458,59 @@ body {
   animation: magi-float 5s ease-in-out infinite;
 }
 
-/* Efecto de nieve */
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 2s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.animate-shake-gentle {
+  animation: shakeGentle 0.5s ease-in-out;
+}
+
+.animate-fly-around {
+  animation: flyAround 4s linear infinite;
+}
+
+.animate-santa-move {
+  animation: santaMove 3s ease-in-out infinite;
+}
+
+.animate-reindeer-nose {
+  animation: reindeerNose 1.5s ease-in-out infinite;
+}
+
+.animate-angel-halo {
+  animation: angelHalo 3s ease-in-out infinite;
+}
+
+.animate-magi-glow {
+  animation: magiGlow 2s ease-in-out infinite;
+}
+
+.animate-elf-jump {
+  animation: elfJump 1s ease-in-out infinite;
+}
+
+.animate-snowman-melt {
+  animation: snowmanMelt 4s ease-in-out infinite;
+}
+
+.animate-mary-joseph {
+  animation: maryJoseph 3s ease-in-out infinite;
+}
+
+.animate-jesus-cradle {
+  animation: jesusCradle 3s ease-in-out infinite;
+}
+
+/* ===== ESTILOS GENERALES ===== */
 .snow-container {
   position: fixed;
   top: 0;
@@ -262,14 +528,14 @@ body {
   opacity: 0.8;
 }
 
-/* Modal personalizado */
+/* ===== MODAL MEJORADO ===== */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 23, 42, 0.98);
+  background-color: rgba(15, 23, 42, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,9 +544,9 @@ body {
   visibility: hidden;
   transition: all 0.3s ease;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  -webkit-overflow-scrolling: touch;
   padding: 20px 10px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 
 .modal-overlay.active {
@@ -289,28 +555,20 @@ body {
 }
 
 .modal-content {
-  background: linear-gradient(145deg, rgba(30, 41, 59, 0.98), rgba(15, 23, 42, 0.98));
-  border-radius: 20px;
-  padding: 1.5rem;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+  border-radius: 24px;
+  padding: 2rem;
   width: 95%;
-  max-width: 500px;
-  max-height: 85vh;
+  max-width: 800px;
+  max-height: 90vh;
   position: relative;
-  transform: scale(0.95) translateY(20px);
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  border: 2px solid rgba(251, 191, 36, 0.3);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9) translateY(30px);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+  border: 2px solid rgba(251, 191, 36, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(20px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-}
-
-/* Para evitar que el fondo se desplace en iOS */
-body.modal-open {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 .modal-overlay.active .modal-content {
@@ -318,58 +576,273 @@ body.modal-open {
   opacity: 1;
 }
 
-/* Botón de cierre mejorado para móviles */
+body.modal-open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Botón de cierre mejorado */
 .modal-close {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(239, 68, 68, 0.9);
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--christmas-red), var(--ruby));
   border: none;
   color: white;
   font-size: 1.5rem;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  -webkit-tap-highlight-color: transparent; /* Elimina el azul al tocar en móviles */
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .modal-close:hover, .modal-close:active {
-  background: #ef4444;
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, var(--ruby), #dc2626);
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.6);
 }
 
-/* Contenedor interno del modal con scroll */
+/* Contenido del modal mejorado */
 .modal-body {
-  max-height: calc(85vh - 100px);
+  max-height: calc(90vh - 120px);
   overflow-y: auto;
-  padding-right: 5px;
+  padding-right: 10px;
   -webkit-overflow-scrolling: touch;
 }
 
-/* Personalización de scrollbar para móviles */
+/* Barra de desplazamiento personalizada */
 .modal-body::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 .modal-body::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
 }
 
 .modal-body::-webkit-scrollbar-thumb {
-  background: rgba(251, 191, 36, 0.5);
+  background: linear-gradient(to bottom, var(--christmas-gold), var(--christmas-orange));
   border-radius: 10px;
 }
 
-/* Efectos de luces navideñas */
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--christmas-orange), var(--christmas-red));
+}
+
+/* ===== DISEÑO INTERIOR DEL MODAL ===== */
+.modal-character-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(251, 191, 36, 0.2);
+}
+
+.modal-character-icon-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-character-icon-container::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+.modal-character-icon {
+  font-size: 4.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.modal-character-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--christmas-gold), var(--christmas-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.modal-character-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Secciones del modal */
+.modal-section {
+  margin-bottom: 2rem;
+  animation: slideUp 0.6s ease-out forwards;
+  animation-delay: calc(var(--section-index, 0) * 0.1s);
+  opacity: 0;
+}
+
+.modal-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-section-title i {
+  color: var(--christmas-gold);
+}
+
+.modal-description {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista de características */
+.modal-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.modal-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1rem;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid var(--christmas-gold);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.modal-feature-item:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.modal-feature-icon {
+  color: var(--christmas-gold);
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.modal-feature-text {
+  color: rgba(255, 255, 255, 0.85);
+  flex: 1;
+}
+
+/* Cita bíblica o mensaje especial */
+.modal-quote {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(22, 163, 74, 0.1));
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-quote::before {
+  content: '❝';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 3rem;
+  color: rgba(251, 191, 36, 0.3);
+  font-family: "Playfair Display", serif;
+}
+
+.modal-quote-text {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 40px;
+}
+
+.modal-quote-source {
+  color: var(--christmas-gold);
+  text-align: right;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Botones del modal */
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.modal-button {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.modal-button-primary {
+  background: linear-gradient(135deg, var(--christmas-gold), var(--christmas-orange));
+  color: white;
+}
+
+.modal-button-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modal-button-primary:hover {
+  background: linear-gradient(135deg, var(--christmas-orange), var(--christmas-red));
+}
+
+.modal-button-secondary:hover {
+  border-color: var(--christmas-gold);
+  background: rgba(251, 191, 36, 0.1);
+}
+
+/* ===== EFECTOS DE LUZ ===== */
 .christmas-light {
   position: absolute;
   width: 12px;
@@ -378,7 +851,7 @@ body.modal-open {
   animation: twinkle 1.5s infinite alternate;
 }
 
-/* Tarjetas de personajes mejoradas */
+/* ===== TARJETAS DE PERSONAJES ===== */
 .character-card {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
@@ -446,193 +919,79 @@ body.modal-open {
   animation: magi-float 5s ease-in-out infinite;
 }
 
-/* ÁRBOL DE NAVIDAD MEJORADO - 3D */
-.tree-container {
-  position: relative;
-  width: 320px;
-  height: 500px;
-  perspective: 1000px;
+/* ===== ÁRBOL SVG ===== */
+.svg-tree {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.3));
+  max-width: 100%;
+  height: auto;
 }
 
-.tree-3d {
-  position: absolute;
+.svg-tree:hover {
+  filter: drop-shadow(0 0 20px rgba(16, 185, 129, 0.5));
+}
+
+#svg-container {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.tree-layer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50% 50% 0 0;
+.adorno {
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.tree-layer-1 {
-  width: 200px;
-  height: 180px;
-  background: linear-gradient(to bottom, var(--christmas-green), #1e7e34);
-  z-index: 1;
-  bottom: 40px;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+.adorno:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
-.tree-layer-2 {
-  width: 160px;
-  height: 150px;
-  background: linear-gradient(to bottom, #166534, var(--christmas-green));
-  z-index: 2;
-  bottom: 130px;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+.adorno circle:first-child {
+  transition: fill 0.5s ease;
 }
 
-.tree-layer-3 {
-  width: 120px;
-  height: 120px;
-  background: linear-gradient(to bottom, #052e16, var(--christmas-green));
-  z-index: 3;
-  bottom: 210px;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+.regalo {
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.tree-layer-4 {
-  width: 80px;
-  height: 90px;
-  background: linear-gradient(to bottom, var(--christmas-green), #052e16);
-  z-index: 4;
-  bottom: 280px;
-  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.3);
+.regalo:hover {
+  animation: gift-bounce 1s ease infinite;
 }
 
-.tree-trunk {
-  position: absolute;
-  width: 40px;
-  height: 60px;
-  background: linear-gradient(to bottom, var(--christmas-brown), #654321);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-  z-index: 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+.luz {
+  animation: light-flicker 1.5s infinite alternate;
+  cursor: pointer;
 }
 
-.tree-star {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--christmas-gold);
-  font-size: 60px;
-  z-index: 10;
+.luz:hover {
+  animation: light-flicker 0.5s infinite alternate;
+}
+
+.navidad-estrella {
+  cursor: pointer;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.navidad-estrella:hover {
+  transform: scale(1.1);
   filter: drop-shadow(0 0 15px gold);
 }
 
-.tree-ornament {
-  position: absolute;
-  border-radius: 50%;
-  z-index: 5;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+.arbol-capa {
+  cursor: pointer;
+  transition: fill 0.3s ease;
 }
 
-.tree-ornament:hover {
-  transform: scale(1.2);
-  z-index: 20;
+.arbol-capa:hover {
+  fill: #2a9d8f;
 }
 
-.tree-light {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  z-index: 4;
-  animation: light-flicker 1.5s infinite alternate;
-  filter: blur(1px);
-}
-
-.tree-gifts {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  z-index: 0;
-}
-
-.gift-box {
-  width: 60px;
-  height: 60px;
-  position: relative;
-  border-radius: 8px;
-  transform-style: preserve-3d;
-  animation: gift-shake 3s ease-in-out infinite;
-  animation-delay: var(--gift-delay);
-}
-
-.gift-box:nth-child(1) {
-  background: linear-gradient(45deg, var(--christmas-red), #dc2626);
-}
-
-.gift-box:nth-child(2) {
-  background: linear-gradient(45deg, var(--christmas-cyan), #0d9488);
-}
-
-.gift-box:nth-child(3) {
-  background: linear-gradient(45deg, var(--christmas-purple), #7c3aed);
-}
-
-.gift-ribbon {
-  position: absolute;
-  background-color: var(--christmas-gold);
-  border-radius: 2px;
-}
-
-.gift-ribbon-horizontal {
-  width: 100%;
-  height: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.gift-ribbon-vertical {
-  width: 15px;
-  height: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.gift-bow {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: var(--christmas-gold);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.gift-bow::before,
-.gift-bow::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: var(--christmas-gold);
-  border-radius: 50%;
-  top: -5px;
-}
-
-.gift-bow::before {
-  left: -20px;
-}
-
-.gift-bow::after {
-  right: -20px;
+.tronco {
+  cursor: pointer;
 }
 
 /* Controles del árbol */
@@ -642,6 +1001,7 @@ body.modal-open {
   border-radius: 15px;
   padding: 20px;
   border: 1px solid rgba(251, 191, 36, 0.2);
+  margin-top: 20px;
 }
 
 .ornament-btn {
@@ -702,110 +1062,170 @@ body.modal-open {
   border-radius: 5px;
 }
 
-/* Responsive adicional */
-@media (max-width: 768px) {
+/* Notificación de mensaje */
+.message-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, var(--christmas-red), var(--christmas-gold));
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  animation: slide-in 0.3s ease-out;
+  text-align: center;
+  max-width: 80%;
+  font-weight: 600;
+}
+
+.message-notification.hiding {
+  animation: slide-in 0.3s ease-out reverse;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
   .modal-content {
-    max-width: 450px;
+    max-width: 700px;
     padding: 1.8rem;
   }
-  /*.modal-content {
-    padding: 1.5rem;
-    width: 95%;
-  }*/
+  
+  .modal-character-icon-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .modal-character-icon {
+    font-size: 4rem;
+  }
+  
+  .modal-character-title {
+    font-size: 2.2rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+    padding: 1.5rem;
+    max-height: 85vh;
+  }
+  
+  .modal-body {
+    max-height: calc(85vh - 100px);
+  }
+  
+  .modal-character-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modal-character-icon-container {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-character-icon {
+    font-size: 3.5rem;
+  }
+  
+  .modal-character-title {
+    font-size: 2rem;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .modal-button {
+    width: 100%;
+  }
+  
   .character-card:hover {
     transform: translateY(-8px) scale(1.03);
   }
 
-  .tree-container {
-    width: 260px;
-    height: 420px;
+  #svg-container {
+    min-height: 350px;
   }
-
-  .tree-layer-1 {
-    width: 160px;
-    height: 140px;
-  }
-
-  .tree-layer-2 {
-    width: 130px;
-    height: 120px;
-    bottom: 110px;
-  }
-
-  .tree-layer-3 {
-    width: 100px;
-    height: 100px;
-    bottom: 170px;
-  }
-
-  .tree-layer-4 {
-    width: 70px;
-    height: 80px;
-    bottom: 220px;
-  }
-
-  .tree-star {
-    font-size: 45px;
-    top: 10px;
-  }
-
-  .gift-box {
-    width: 50px;
-    height: 50px;
+  
+  .svg-tree {
+    width: 250px;
+    height: 375px;
   }
 }
 
 @media (max-width: 480px) {
   .modal-content {
     padding: 1.2rem;
-    width: 92%;
+    width: 95%;
     max-height: 80vh;
-    border-radius: 16px;
-}
+    border-radius: 20px;
+  }
 
-.modal-close {
-    top: 12px;
-    right: 12px;
-    width: 36px;
-    height: 36px;
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
     font-size: 1.3rem;
-}
+  }
 
-.modal-body {
+  .modal-body {
     max-height: calc(80vh - 90px);
-}
-
-  .tree-container {
-    width: 220px;
-    height: 380px;
   }
-
-  .tree-layer-1 {
-    width: 140px;
-    height: 120px;
-  }
-
-  .tree-layer-2 {
-    width: 110px;
-    height: 100px;
-    bottom: 90px;
-  }
-
-  .tree-layer-3 {
+  
+  .modal-character-icon-container {
     width: 80px;
     height: 80px;
-    bottom: 140px;
+  }
+  
+  .modal-character-icon {
+    font-size: 2.5rem;
+  }
+  
+  .modal-character-title {
+    font-size: 1.8rem;
+  }
+  
+  .modal-section-title {
+    font-size: 1.3rem;
+  }
+  
+  .modal-description {
+    font-size: 1rem;
   }
 
-  .tree-layer-4 {
-    width: 60px;
-    height: 70px;
-    bottom: 180px;
+  #svg-container {
+    min-height: 300px;
   }
+  
+  .svg-tree {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .tree-controls {
+    padding: 15px;
+  }
+  
+  .ornament-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
 
-  .tree-star {
-    font-size: 35px;
-    top: 5px;
+/* Animación de rotación para efectos de fondo */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
